@@ -10,8 +10,7 @@
         }
     ],
     "require": {
-        "phpoffice/phpspreadsheet": "^1.2",
-        "zouyou/excel_reader": "dev-master"
+        "phpoffice/phpspreadsheet": "^1.2"
     },
     "autoload": {
         "psr-4": {
