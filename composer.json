@@ -10,12 +10,20 @@
         }
     ],
     "require": {
+        "php": ">=7.0",
         "phpoffice/phpspreadsheet": "^1.2"
     },
+    "minimum-stability" : "dev",
     "autoload": {
         "psr-4": {
             "ExcelHanlder\\": "src/",
             "Test\\": "test/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
         }
     }
 }
