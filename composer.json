@@ -9,9 +9,9 @@
             "email": "1075820342@qq.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "phpoffice/phpspreadsheet": "^1.2"
+        "phpoffice/phpspreadsheet": "^1.2",
+        "zouyou/excel_reader": "dev-master"
     },
     "autoload": {
         "psr-4": {
