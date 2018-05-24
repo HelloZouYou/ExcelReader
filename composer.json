@@ -1,0 +1,22 @@
+{
+    "name": "zouyou/excel_reader",
+    "description": "基于PhpOffice\\PhpSpreadsheet封装的Excel读取类",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zouyou",
+            "email": "1075820342@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExcelHanlder\\": "src/",
+            "Test\\": "test/"
+        }
+    }
+}
