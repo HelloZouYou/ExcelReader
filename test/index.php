@@ -13,13 +13,9 @@ class Test
     {
         ini_set ('memory_limit', '256M');
         $file_path = iconv('utf-8', 'gb2312', __DIR__ . '/files/10.xlsx');
-        // if (!file_exists('/files/1.txt')) {
-        //     throw new Exception("文件不存在");
-        // }
         $res = ExcelReader::selectSheetsByIndex(0)->load($file_path)->stopWhileEmptyLine(10)->get();
         $data = $this->pregMatchOperator($res, true);
         dd($res, $data);
-        die;
     }
 
     /**
