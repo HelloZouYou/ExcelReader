@@ -1,4 +1,7 @@
 <?php
+/**
+ * 辅助函数类
+ */
 namespace ExcelHanlder;
 
 class Helper
@@ -27,7 +30,7 @@ class Helper
     public static function alpha2num($strAlpha)
     {
         // 判断大小写
-        if ( ord($strAlpha{0} ) > 90) {
+        if (ord($strAlpha{0} ) > 90) {
             $startCode = 97;
             $reduceCode = 10;
         } else {
@@ -46,10 +49,13 @@ class Helper
         return (int)base_convert($num26, 26, 10);
     }
 
-    /*
-     * excel中为防止数字被科学计数法，将其转字符串
+    /**
+     * Excel中为防止数字被科学计数法，将其转字符串
+     *
+     * @param  int $v 待转化的数字
+     * @return string
      */
-    public static function excel_number_to_string($v)
+    public static function excelNumberToString($v)
     {
         return "\t" . (string)$v . "\t";
     }
